@@ -3,11 +3,14 @@ import panel as pn
 import openai
 import os
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 config_list = [
     {
         'model': 'gpt-3.5-turbo-0125', #'gpt-4-1106-preview',
-        'api_key': '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',
+        'api_key': os.getenv("OPENAI_API_KEY"),
     }
     ]
 gpt4_config = {"config_list": config_list, "temperature":0, "seed": 53}
