@@ -3,3 +3,5 @@ hvplot
 scikit-learn
 nbconvert
 autogen
+openai
+matplotlib
